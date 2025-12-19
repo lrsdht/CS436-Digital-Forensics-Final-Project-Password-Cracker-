@@ -2,8 +2,16 @@
 #include <iostream>
 #include <chrono>
 #include <iomanip>
+#include <filesystem>
 
 using namespace std;
+
+static string p(const string& rel) {
+#ifdef PROJECT_ROOT
+    return (std::filesystem::path(PROJECT_ROOT) / rel).string();
+#endif
+}
+
 
 int main() {
     cout << "loading stuff..." << endl;

@@ -1,0 +1,21 @@
+# ---- OS junk ----
+.DS_Store
+
+# ---- Build output (CMake) ----
+build/
+cmake-build-*/
+
+# ---- Compiled binaries ----
+cracker
+cracker.exe
+main
+*.exe
+*.out
+*.o
+*.obj
+
+# ---- macOS debug symbols ----
+*.dSYM/
+
+# ---- VS Code settings (optional) ----
+.vscode/
